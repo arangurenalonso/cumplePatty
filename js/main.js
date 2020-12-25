@@ -158,7 +158,6 @@ function enableAutoplay() {
 function playAudio(audio) {
   audio.autoplay=true
   audio.load();
-  audio.play();
 }
 
 function pauseAudio(audio) {
