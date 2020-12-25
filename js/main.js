@@ -269,7 +269,9 @@ function ReproduciraudioInicial(){
   const boxAudioInicial = document.createElement("div");
   boxAudioInicial.classList.add("ocultar");
   boxAudioInicial.innerHTML = `
-                <audio class="audioinicial" src="audio/audio2.mp3"></audio>
+                <audio class="audioinicial" controls autoplay>
+                    <source src="audio/audio2.mp3" type="audio/mp3">
+                </audio>
                 
               `;
   document.body.append(boxAudioInicial)
