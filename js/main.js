@@ -156,7 +156,8 @@ function enableAutoplay() {
  **********************************/
 
 function playAudio(audio) {
-  
+  audio.autoplay=true
+  audio.load();
   audio.play();
 }
 
@@ -273,6 +274,12 @@ function ReproduciraudioInicial(){
               `;
   document.body.append(boxAudioInicial)
   const audio = document.querySelector(".audioinicial");
-  playAudio(audio);
+  playAudioInicial(audio);
 }
+
+function playAudioInicial(audio){
+  audio.autoplay=true
+  audio.load();
+  }
 ReproduciraudioInicial()
+
