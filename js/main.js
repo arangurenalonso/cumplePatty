@@ -264,8 +264,15 @@ boxVideo.addEventListener("click", (e) => {
 
 
 
-function audioInicial(){
+function ReproduciraudioInicial(){
+  const boxAudioInicial = document.createElement("div");
+  boxAudioInicial.classList.add("ocultar");
+  boxAudioInicial.innerHTML = `
+                <audio class="audioinicial" src="audio/audio2.mp3"></audio>
+                
+              `;
+  document.body.append(boxAudioInicial)
   const audio = document.querySelector(".audioinicial");
   playAudio(audio);
 }
-audioInicial()
+ReproduciraudioInicial()
